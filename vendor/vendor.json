@@ -1,0 +1,84 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "EihCYRRBjAtff6TlN/eQMuWX/sQ=",
+			"path": "github.com/ChimeraCoder/anaconda",
+			"revision": "6d66c395d5c8e63b38413965c43155fc2947a901",
+			"revisionTime": "2017-11-25T09:53:01Z"
+		},
+		{
+			"checksumSHA1": "9Az6MTTlcJJri6c046O5WTE1ews=",
+			"origin": "github.com/ChimeraCoder/anaconda/vendor/github.com/ChimeraCoder/tokenbucket",
+			"path": "github.com/ChimeraCoder/tokenbucket",
+			"revision": "6d66c395d5c8e63b38413965c43155fc2947a901",
+			"revisionTime": "2017-11-25T09:53:01Z"
+		},
+		{
+			"checksumSHA1": "9sHZazCANEeMaWhm1vywhcNssYc=",
+			"path": "github.com/Sirupsen/logrus",
+			"revision": "d682213848ed68c0a260ca37d6dd5ace8423f5ba",
+			"revisionTime": "2017-12-05T20:32:29Z"
+		},
+		{
+			"checksumSHA1": "0mObkcij+rFu8YTXFQSD2L0PL7Q=",
+			"origin": "github.com/ChimeraCoder/anaconda/vendor/github.com/azr/backoff",
+			"path": "github.com/azr/backoff",
+			"revision": "6d66c395d5c8e63b38413965c43155fc2947a901",
+			"revisionTime": "2017-11-25T09:53:01Z"
+		},
+		{
+			"checksumSHA1": "jS7Bu5pqvZ7xfB3jZkoEV6IrOx4=",
+			"origin": "github.com/ChimeraCoder/anaconda/vendor/github.com/dustin/go-jsonpointer",
+			"path": "github.com/dustin/go-jsonpointer",
+			"revision": "6d66c395d5c8e63b38413965c43155fc2947a901",
+			"revisionTime": "2017-11-25T09:53:01Z"
+		},
+		{
+			"checksumSHA1": "Jx1fYjK0bFN8aq9OQwpt7eMsJwE=",
+			"origin": "github.com/ChimeraCoder/anaconda/vendor/github.com/dustin/gojson",
+			"path": "github.com/dustin/gojson",
+			"revision": "6d66c395d5c8e63b38413965c43155fc2947a901",
+			"revisionTime": "2017-11-25T09:53:01Z"
+		},
+		{
+			"checksumSHA1": "Pagj7hDRyPAj6/BqkHHbKfXJKr0=",
+			"origin": "github.com/ChimeraCoder/anaconda/vendor/github.com/garyburd/go-oauth/oauth",
+			"path": "github.com/garyburd/go-oauth/oauth",
+			"revision": "6d66c395d5c8e63b38413965c43155fc2947a901",
+			"revisionTime": "2017-11-25T09:53:01Z"
+		},
+		{
+			"checksumSHA1": "xIMAtBK7jR031TMKxOosJERqghw=",
+			"path": "github.com/rifflock/lfshook",
+			"revision": "1fdc019a35147ddbb3d25aedf713ad6d1430c144",
+			"revisionTime": "2017-12-19T15:31:09Z"
+		},
+		{
+			"checksumSHA1": "Bov30zFUQHGdgKX7BUIvW9EgzOw=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "d682213848ed68c0a260ca37d6dd5ace8423f5ba",
+			"revisionTime": "2017-12-05T20:32:29Z"
+		},
+		{
+			"checksumSHA1": "X1NTlfcau2XcV6WtAHF6b/DECOA=",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "3d37316aaa6bd9929127ac9a527abf408178ea7b",
+			"revisionTime": "2018-01-22T21:46:34Z"
+		},
+		{
+			"checksumSHA1": "jnZV9PwpPiMLhp/mmdYodZ94iU4=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "ef802241c90f84d84d644a2d8d0de8ee96038c9c",
+			"revisionTime": "2018-01-11T13:58:01Z"
+		},
+		{
+			"checksumSHA1": "eQq+ZoTWPjyizS9XalhZwfGjQao=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "ef802241c90f84d84d644a2d8d0de8ee96038c9c",
+			"revisionTime": "2018-01-11T13:58:01Z"
+		}
+	],
+	"rootPath": "github.com/sultatos/twitterBot"
+}

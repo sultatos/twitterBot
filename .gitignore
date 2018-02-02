@@ -22,3 +22,11 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+\.env
+
+twitterBot
+
+info\.log
+
+Procfile
