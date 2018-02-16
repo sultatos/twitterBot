@@ -3,6 +3,7 @@ package main
 import (
 	"net/url"
 	"os"
+	"time"
 
 	"github.com/ChimeraCoder/anaconda"
 	"github.com/rifflock/lfshook"
@@ -74,6 +75,7 @@ func main() {
 			log.Warningf("Profanity found in tweet: %s \n\t will not retweet it", t.Text)
 			continue
 		}
+		time.Sleep(30 * time.Second)
 		_, err = api.Retweet(t.Id, false)
 		if err != nil {
 			log.Errorf("could not retweet %d: %v", t.Id, err)

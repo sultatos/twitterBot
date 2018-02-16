@@ -30,3 +30,4 @@ twitterBot
 info\.log
 
 Procfile
+heroku.yml
