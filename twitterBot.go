@@ -44,7 +44,7 @@ func main() {
 	api.SetLogger(log)
 
 	stream := api.PublicStreamFilter(url.Values{
-		"track": []string{"raid2018", "certcoop", "virtuwind", "semiotics_eu", "cybersure_eu", "CE_Iot", "Ideal_Cities",
+		"track": []string{"certcoop", "virtuwind", "semiotics_eu", "cybersure_eu", "CE_Iot", "Ideal_Cities",
 			"@certcoop", "@virtuwind", "@semiotics_eu", "@cybersure_eu", "@CE_Iot", "@Ideal_Cities"},
 		// "follow": []string{"certcoop", "VirtuWind", "semiotics_eu", "cybersure_eu"},
 
