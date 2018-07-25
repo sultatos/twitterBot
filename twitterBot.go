@@ -1,6 +1,8 @@
 package main
 
 import (
+	"encoding/json"
+	"io/ioutil"
 	"net/url"
 	"os"
 	"time"
@@ -42,10 +44,18 @@ func main() {
 	))
 	log := &logger{Log}
 	api.SetLogger(log)
+	var Test Keys
+	input, err := ioutil.ReadFile("followList.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = json.Unmarshal(input, &Test)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	stream := api.PublicStreamFilter(url.Values{
-		"track": []string{"certcoop", "virtuwind", "semiotics_eu", "cybersure_eu", "CE_Iot", "Ideal_Cities",
-			"@certcoop", "@virtuwind", "@semiotics_eu", "@cybersure_eu", "@CE_Iot", "@Ideal_Cities"},
+		"track": Test.Track,
 		// "follow": []string{"certcoop", "VirtuWind", "semiotics_eu", "cybersure_eu"},
 
 	})
@@ -83,6 +93,10 @@ func main() {
 		}
 		log.Infof("will retweet %d from %s", t.Id, t.User.Name)
 	}
+}
+
+type Keys struct {
+	Track []string
 }
 
 type logger struct {
