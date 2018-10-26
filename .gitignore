@@ -19,13 +19,11 @@ _cgo_export.*
 
 _testmain.go
 
-*.exe
+
 *.test
 *.prof
 
 \.env
-
-twitterBot
 
 info\.log
 

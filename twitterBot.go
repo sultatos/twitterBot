@@ -6,6 +6,7 @@ import (
 	"net/url"
 	"os"
 	"time"
+	"flag"
 
 	"github.com/ChimeraCoder/anaconda"
 	"github.com/rifflock/lfshook"
@@ -14,10 +15,10 @@ import (
 )
 
 var (
-	consumerKey       = getenv("TWITTER_CONSUMER_KEY")
-	consumerSecret    = getenv("TWITTER_CONSUMER_SECRET")
-	accessToken       = getenv("TWITTER_ACCESS_TOKEN")
-	accessTokenSecret = getenv("TWITTER_ACCESS_TOKEN_SECRET")
+	consumerKey,
+	consumerSecret,    
+	accessToken,       
+	accessTokenSecret string
 	Log               *logrus.Logger
 )
 
@@ -29,7 +30,19 @@ func getenv(name string) string {
 	return v
 }
 
+func init(){
+	flag.StringVar(&consumerKey,"consumerKey","","set the twitter consumer key")
+	flag.StringVar(&consumerSecret,"consumerSecret","","set the twitter consumer secret")
+	flag.StringVar(&accessToken,"accessToken","","set the twitter access Token")
+	flag.StringVar(&accessTokenSecret,"accessTokenSecret","","set the twitter access token secret")
+}
+
 func main() {
+	flag.Parse();
+	if len(consumerKey) == 0 || len(consumerSecret) == 0 || len (accessToken) == 0 || len(accessTokenSecret) == 0 {
+		flag.Usage()
+		return;
+	}
 	anaconda.SetConsumerKey(consumerKey)
 	anaconda.SetConsumerSecret(consumerSecret)
 	api := anaconda.NewTwitterApi(accessToken, accessTokenSecret)
@@ -89,6 +102,11 @@ func main() {
 		_, err = api.Retweet(t.Id, false)
 		if err != nil {
 			log.Errorf("could not retweet %d: %v", t.Id, err)
+			continue
+		}
+		_, err = api.Favorite(t.Id)
+		if err != nil{
+			log.Error("could not like %d: %v", t.Id, err)
 			continue
 		}
 		log.Infof("will retweet %d from %s", t.Id, t.User.Name)
