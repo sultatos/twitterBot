@@ -1,4 +1,6 @@
 {
     "Track": 
-        ["certcoop", "virtuwind", "semiotics_eu", "cybersure_eu", "CE_IoT", "Ideal_Cities", "@certcoop", "@virtuwind", "@semiotics_eu", "@cybersure_eu", "@CE_IoT", "@Ideal_Cities","@othonass"]
+        ["certcoop", "semiotics_eu", "cybersure_eu", "CE_IoT", "Ideal_Cities", "@othonass"],
+    "Follow":
+        ["913395220917694466", "951880023736291328", "826448575353724934", "953985996647010309", "953991269549793280","549964192"]
 }

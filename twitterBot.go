@@ -69,6 +69,7 @@ func main() {
 
 	stream := api.PublicStreamFilter(url.Values{
 		"track": Test.Track,
+		"follow": Test.Follow,
 		// "follow": []string{"certcoop", "VirtuWind", "semiotics_eu", "cybersure_eu"},
 
 	})
@@ -115,6 +116,7 @@ func main() {
 
 type Keys struct {
 	Track []string
+	Follow []string
 }
 
 type logger struct {
